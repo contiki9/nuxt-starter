@@ -8,11 +8,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'サイトタイトル（仮）',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'ディスクリプション（仮）' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -42,7 +42,6 @@ export default {
           success: colors.green.accent3,
           twitter: '#55acee',
           facebook: '#3b5998',
-          background: colors.grey.lighten5
         }
       }
     },
@@ -68,6 +67,9 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXX' }],
+    '@nuxtjs/sitemap'
   ],
 
   /*
