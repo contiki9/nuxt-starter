@@ -11,6 +11,7 @@
       >
         fab fa-twitter
       </v-icon>
+      <v-icon>mdi-anchor</v-icon>
       <h1 class="title">
         nuxt-startar2
       </h1>
