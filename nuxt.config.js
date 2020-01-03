@@ -1,6 +1,7 @@
 import pkg from './package'
 import colors from "vuetify/es5/util/colors";
 
+
 export default {
   mode: 'universal',
 
@@ -15,7 +16,7 @@ export default {
       { hid: 'description', name: 'description', content: 'ディスクリプション（仮）' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ]
   },
 
@@ -69,7 +70,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXX' }],
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/device',
   ],
 
   /*

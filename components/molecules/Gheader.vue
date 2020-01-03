@@ -6,9 +6,9 @@
   >
 
     <v-toolbar dense>
-      <v-toolbar-title>Title</v-toolbar-title>
+      <v-toolbar-title><nuxt-link to="/">Title</nuxt-link></v-toolbar-title>
       <v-spacer></v-spacer>
-      <template v-if="this.$vuetify.breakpoint.mdAndUp">
+      <template v-if="this.$device.isDesktopOrTablet">
         <v-toolbar-items v-for='(menu, i) in menus' :key='i'>
           <v-btn text :to='menu.link'>{{ menu.title }}</v-btn>
         </v-toolbar-items>
@@ -64,6 +64,6 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>
