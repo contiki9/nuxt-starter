@@ -95,6 +95,9 @@ export default {
       indentedSyntax: true
     }
   },
+  sitemap: {
+    hostname: '',
+  },
   buildModules: [
     // Simple usage
     '@nuxtjs/vuetify',
