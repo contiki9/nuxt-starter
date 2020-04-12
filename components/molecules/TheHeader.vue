@@ -41,7 +41,7 @@
 
 <script>
     export default {
-        name: "Gheader",
+        name: "TheHeader",
         data(){
           return{
 

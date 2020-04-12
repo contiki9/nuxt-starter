@@ -1,20 +1,20 @@
 <template>
     <v-app>
-      <app-gheader />
+      <app-header />
       <nuxt />
-      <app-gfooter />
+      <app-footer />
     </v-app>
 </template>
 
 
 <script>
-    import Gheader from '~/components/molecules/Gheader.vue'
-    import Gfooter from '~/components/molecules/Gfooter.vue'
+    import TheHeader from '~/components/molecules/TheHeader.vue'
+    import TheFooter from '~/components/molecules/TheFooter.vue'
 
     export default {
         components: {
-            'app-gheader':Gheader,
-            'app-gfooter':Gfooter,
+            'app-header':TheHeader,
+            'app-footer':TheFooter,
         }
     }
 </script>
